@@ -7,4 +7,5 @@ if(numeri_casuali % 3 == 0){
     document.getElementById("numeri").innerHTML = "Il numero estratto è " + "Buzz";
 }else if(numeri_casuali % 3 == 0 && numeri_casuali % 5 == 0 ){
     document.getElementById("numeri").innerHTML = "Il numero estratto è " + "FizzBuzz";
+
 }
