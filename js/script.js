@@ -1,11 +1,23 @@
-var numeri_casuali = Math.floor(Math.random() * 100) + 1;
-document.getElementById("numeri").innerHTML = "Il numero estratto è " + numeri_casuali;
 
-if(numeri_casuali % 3 == 0){
-    document.getElementById("numeri").innerHTML = "Il numero estratto è " + "Fizz";
-}else if(numeri_casuali % 5 == 0){
-    document.getElementById("numeri").innerHTML = "Il numero estratto è " + "Buzz";
-}else if(numeri_casuali % 3 == 0 && numeri_casuali % 5 == 0 ){
-    document.getElementById("numeri").innerHTML = "Il numero estratto è " + "FizzBuzz";
 
+for(var i = 1; i <= 100; i++ ){
+    
+    if(i % 3 == 0 && i % 5 == 0){
+        console.log("il valore di i è FizzBuzz" );
+    }else if(i % 3 == 0){
+        console.log("il valore di i è Fizz");
+    }else if(i % 5 == 0){
+        console.log("il valore di i è Buzz");
+    }else if(i % 3 !== 0 && i % 5 !== 0){
+        console.log("il valore di i è " + i)
+    }
+    
 }
+
+
+
+
+
+
+
+
